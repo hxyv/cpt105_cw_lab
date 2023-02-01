@@ -1,0 +1,50 @@
+@startuml
+annotation java.lang.Override
+class java.security.InvalidKeyException
+class java.security.NoSuchAlgorithmException
+class java.util.ArrayList
+class java.util.Base64
+class java.util.List
+class java.util.Scanner
+class javax.crypto.Cipher
+class javax.crypto.NoSuchPaddingException
+class javax.crypto.SecretKey
+class javax.crypto.SecretKeyFactory
+class javax.crypto.spec.DESKeySpec
+class packet2033924partb.Course
+class packet2033924partb.DataAccess
+class packet2033924partb.Encryption
+class packet2033924partb.FileUtils
+class packet2033924partb.Grade
+class packet2033924partb.Packet2033924PartB
+class packet2033924partb.Person
+class packet2033924partb.Q3
+class packet2033924partb.Student
+class packet2033924partb.Teacher
+enum packet2033924partb.Gender
+interface java.io.Serializable
+packet2033924partb.Course ..> java.lang.Override
+packet2033924partb.Course --|> java.io.Serializable
+packet2033924partb.DataAccess ..> java.util.List
+packet2033924partb.Encryption ..> java.security.InvalidKeyException
+packet2033924partb.Encryption ..> java.security.NoSuchAlgorithmException
+packet2033924partb.Encryption ..> java.util.Base64
+packet2033924partb.Encryption ..> javax.crypto.Cipher
+packet2033924partb.Encryption ..> javax.crypto.NoSuchPaddingException
+packet2033924partb.Encryption ..> javax.crypto.SecretKey
+packet2033924partb.Encryption ..> javax.crypto.SecretKeyFactory
+packet2033924partb.Encryption ..> javax.crypto.spec.DESKeySpec
+packet2033924partb.FileUtils ..> java.util.ArrayList
+packet2033924partb.FileUtils ..> java.util.List
+packet2033924partb.Grade ..> java.lang.Override
+packet2033924partb.Grade --|> java.io.Serializable
+packet2033924partb.Person --|> java.io.Serializable
+packet2033924partb.Q3 ..> java.util.List
+packet2033924partb.Q3 ..> java.util.Scanner
+packet2033924partb.Student ..> java.lang.Override
+packet2033924partb.Student --|> packet2033924partb.Person
+packet2033924partb.Student --|> java.io.Serializable
+packet2033924partb.Teacher ..> java.lang.Override
+packet2033924partb.Teacher --|> packet2033924partb.Person
+packet2033924partb.Teacher --|> java.io.Serializable
+@enduml
